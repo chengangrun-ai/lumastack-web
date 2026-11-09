@@ -131,7 +131,8 @@
     opts = opts || {};
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, W, H);
-    const themeNow = opts.theme || appTheme();
+    // 视频画布永远是深色，不受外壳亮暗主题影响（与桌面版一致）
+    const themeNow = opts.theme || 'dark';
     stageBg(ctx, t, themeNow);
     const env = { W, H, theme: themeNow, accent: opts.accent || ACCENT, orange: ORANGE, helper: HELPER };
     if (opts.nativeOnly) {
@@ -292,7 +293,7 @@
     const c = document.createElement('canvas'); c.width = W; c.height = H; const ctx = c.getContext('2d');
     const files = [];
     for (let i = 0; i < total; i++) {
-      drawFrame(ctx, i / FPS, S.project, { theme: appTheme() });
+      drawFrame(ctx, i / FPS, S.project, {});
       const blob = await new Promise(res => c.toBlob(res, 'image/png'));
       files.push({ name: 'frame_' + String(i).padStart(5, '0') + '.png', data: new Uint8Array(await blob.arrayBuffer()) });
       if (i % 10 === 0 || i === total - 1) { S.exportMsg = '正在逐帧渲染 ' + (i + 1) + ' / ' + total; paintExport(); await new Promise(r => setTimeout(r, 0)); }
@@ -314,7 +315,7 @@
     rec.start();
     let last = performance.now();
     for (let i = 0; i < frames; i++) {
-      drawFrame(ctx, i / FPS, S.project, { theme: appTheme() });
+      drawFrame(ctx, i / FPS, S.project, {});
       const now = performance.now(), wait = 1000 / FPS - (now - last);
       if (wait > 0) await new Promise(r => setTimeout(r, wait));
       last = performance.now();
@@ -616,7 +617,7 @@
   }
   function paintStage() {
     const cv = $('#stage'); if (!cv) return;
-    drawFrame(cv.getContext('2d'), S.time, S.project, { theme: appTheme() });
+    drawFrame(cv.getContext('2d'), S.time, S.project, {});
   }
   function paintShowcase() {
     const cv = $('#showcaseStage'); if (!cv) return;
@@ -626,9 +627,9 @@
     const meta = (D.showcase || []).find(s => s.id === id) || {};
     const def = SHOWCASE[id];
     const p = Object.assign(deep((def || {}).defaults || {}), meta.defaults || {}, S.showcaseParams[id] || {});
-    stageBg(ctx, S.showcaseTime, appTheme());
+    stageBg(ctx, S.showcaseTime, 'dark');
     if (def) {
-      const env = { W, H, theme: appTheme(), accent: ACCENT, orange: ORANGE, helper: HELPER };
+      const env = { W, H, theme: 'dark', accent: ACCENT, orange: ORANGE, helper: HELPER };
       try { def.draw(ctx, clamp(S.showcaseTime, 0, def.duration || 6), p, env); } catch (e) { drawErr(ctx, e); }
     }
   }
