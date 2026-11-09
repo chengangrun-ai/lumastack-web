@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>叠光 LumaStack · 把字幕变成动效层</title>
+  <meta name="description" content="叠光 LumaStack 是给口播视频加动效层的网页工作台。26 张动效卡、27 组科技场景、60fps 逐帧预览，改一个字不用重做整条视频。全部功能在浏览器里跑，素材不上传。">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:title" content="叠光 LumaStack · 把字幕变成动效层">
+  <meta property="og:description" content="26 张动效卡，60fps 逐帧导出，全部功能在浏览器里跑。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./assets/landing.css">
+  <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<div id="landing">
+  <header class="nav" id="nav">
+    <a class="brand" href="#main" aria-label="叠光 LumaStack 首页"><span class="brand-mark">◈</span><span>叠光 <em>LumaStack</em></span></a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features" class="is-current">功能</a>
+      <a href="#how">怎么用</a>
+      <a href="#proof">为什么</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <button class="btn btn-sm" data-action="enter-app">打开工作台</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">给每周更新的口播创作者</span>
+        <h1 id="hero-title">把字幕变成动效层<br>改一个字不用重做整条视频</h1>
+        <p class="sub">动效提前做好、调好、验证过。导入字幕稿，按语义自动挑卡对时间；之后改字、换色、挪位置都在画布上完成，其他地方一个像素不动。</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-action="enter-app">免费打开工作台</button>
+          <a class="btn btn-ghost" href="#how">先看看怎么做</a>
+        </div>
+        <p class="proof-line">26 张动效卡 · 60fps 逐帧导出 · 全部功能在浏览器里跑</p>
+      </div>
+      <div class="hero-visual" role="img" aria-label="工作台示意：左侧资源库，中间 1920 乘 1080 画布上有刻度数据环，下方是场景与动效层时间轴，右侧是参数栏">
+        <div class="mock">
+          <div class="mock-side">
+            <div class="mock-brand">◈ 叠光</div>
+            <div class="mock-nav"><span class="on">制作</span><span>模板库</span><span>素材</span><span>音效</span><span>示例</span><span>设置</span></div>
+            <div class="mock-label">资源库</div>
+            <div class="mock-item on">刻度数据环</div><div class="mock-item">双语字幕层</div><div class="mock-item">金句定格</div><div class="mock-item">步骤时间线</div><div class="mock-item">要点钉板</div>
+          </div>
+          <div class="mock-main">
+            <div class="mock-top"><span>我的第一支叠光视频</span><span>1920 × 1080 · 60fps</span></div>
+            <div class="mock-canvas">
+              <div class="mock-grid"></div>
+              <div class="mock-ring"><div class="mock-ring-inner">86<small>%</small></div></div>
+              <div class="mock-caption">两套能力，一起使用</div>
+            </div>
+            <div class="mock-player"><span class="mock-play"></span><div class="mock-bar"><i></i></div><span>00:02.4</span></div>
+            <div class="mock-track"><span>场景</span><div><b>B1 一个关键词</b><b>B2 一到五点</b></div></div>
+            <div class="mock-track"><span>动效层</span><div><b class="fx">刻度数据环</b><b class="fx">双语字幕层</b></div></div>
+          </div>
+          <div class="mock-inspector">
+            <div class="mock-label">参数</div>
+            <div class="mock-field"><span>数值</span><div></div></div>
+            <div class="mock-field"><span>说明文字</span><div></div></div>
+            <div class="mock-field"><span>环色</span><div class="swatch"></div></div>
+            <div class="mock-field"><span>开始 结束</span><div></div></div>
+          </div>
+        </div>
+        <p class="hero-visual-note">工作台实拍骨架：资源库 · 画布 · 时间轴 · 参数栏</p>
+      </div>
+    </section>
+
+    <section class="tagline" id="proof" aria-label="产品主张">
+      <p class="tagline-text" id="taglineText">你改的是字，不是整条视频。<br>卡片摆在那儿等你的内容，风格由你定，时间轴对到句。</p>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="section-head"><span class="eyebrow">能做什么</span><h2 id="features-title">该有的都在，而且真能用</h2><p>不是静态展示页。点进去每个按钮都有真实反应，画布按时间逐帧绘制。</p></div>
+      <div class="cards">
+        <article class="card reveal"><span class="card-num">01</span><h3>26 张动效卡随时挑</h3><p>章节进度、双语字幕、刻度数据环、金句定格、步骤时间线、粒子迸发，覆盖 12 个用途分组。每张都能改字、换色、调大小和出现时间。</p><span class="card-meta">12 个分组 · 6 张社区扩展</span></article>
+        <article class="card reveal"><span class="card-num">02</span><h3>字幕稿自动排时间轴</h3><p>导入 SRT，规则引擎按语义判断哪句话配哪张卡，时间对齐到句。之后想换哪张、往前挪两秒，都是拖一下的事。</p><span class="card-meta">本地规则引擎 · 不花 token</span></article>
+        <article class="card reveal"><span class="card-num">03</span><h3>27 组科技场景做底</h3><p>来自 MotionGit 385712 开源模板包的原生结构，B1 到 B4 四种文字表达可以直接改字，其余 23 组保留原版场景说明与字段数。</p><span class="card-meta">1920 × 1080 · 60fps</span></article>
+        <article class="card reveal"><span class="card-num">04</span><h3>导出真的是逐帧画出来的</h3><p>当前帧 PNG、60fps 透明帧序列 ZIP、预览 WebM、完整工程 JSON，四种都在浏览器里生成并下载，不是预置的示例文件。</p><span class="card-meta">帧序列 · WebM · 工程 JSON</span></article>
+        <article class="card reveal"><span class="card-num">05</span><h3>素材与工程只留在本机</h3><p>图片、视频、音频、工程全部存在这台电脑的浏览器里，自动保存、可撤销 60 步。没有账号，没有上传，断网也能接着改。</p><span class="card-meta">自动保存 · 撤销重做 · 亮暗双主题</span></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="how" aria-labelledby="how-title">
+      <div class="section-head"><span class="eyebrow">怎么用</span><h2 id="how-title">三步，从字幕到动效层</h2><p>不需要先学软件，也不需要准备任何素材就能试。</p></div>
+      <div class="steps">
+        <article class="step reveal"><span class="step-num">1</span><h3>导入或载入示例</h3><p>点开工作台就有一份示例工程。也可以导入自己的 SRT 字幕，或者直接点「载入 28 秒示例」看完整编排。</p></article>
+        <article class="step reveal"><span class="step-num">2</span><h3>点卡片，改参数</h3><p>时间轴上点一下，右侧出现这张卡的全部字段。改完画布立刻跟着变，空格播放看整体节奏，体检器会提醒快闪和空白段。</p></article>
+        <article class="step reveal"><span class="step-num">3</span><h3>导出，盖在原片上</h3><p>导出逐帧透明 PNG 序列或预览 WebM，拖进剪映置顶轨道。工程 JSON 留着，下期换个稿子接着用。</p></article>
+      </div>
+      <div class="section-cta"><button class="btn btn-primary" data-action="enter-app">现在打开工作台</button></div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="section-head"><span class="eyebrow">常见问题</span><h2 id="faq-title">先把话说清楚</h2></div>
+      <div class="faq">
+        <details class="reveal"><summary>要注册或者登录吗？</summary><p>不用。打开网页直接进工作台，没有账号、没有试用额度，也没有把工程传到别处。</p></details>
+        <details class="reveal"><summary>我的视频和图片会被上传吗？</summary><p>不会。上传的素材只在本机浏览器里用 blob 地址引用，工程存 localStorage，导出也是本地下载。关掉页面，东西还在这台电脑上。</p></details>
+        <details class="reveal"><summary>导出的透明层能直接进剪映吗？</summary><p>逐帧 PNG 序列带透明通道，导进剪映或任何剪辑软件作为置顶轨道即可。预览 WebM 用来先看效果，正式成片建议在剪辑软件里合成。</p></details>
+        <details class="reveal"><summary>和让大模型现场改动效有什么区别？</summary><p>大模型现场生成是重新抽一次，改个颜色可能把布局也带跑。这里卡片是提前做好的，改动只落在你选中的那张卡上，改哪变哪，而且不花 token。</p></details>
+        <details class="reveal"><summary>26 张卡和 27 组场景是哪来的？</summary><p>动效卡来自 overlay studio 开源版的 20 张，加上社区扩展 6 张。科技场景来自 MotionGit 385712 的 0.2.7 开源模板包，B1 到 B4 已用 Canvas 等价重建，其余保留原版场景结构说明。</p></details>
+        <details class="reveal"><summary>MotionGit 官网上那些竖屏和人脸居中功能有吗？</summary><p>官网个人包里的竖屏、人脸自动居中、素材 API 需要登录和私有接口，这一版没有搬。公开开源能拿到的部分都在，功能清单在设置页里逐项列着。</p></details>
+        <details class="reveal"><summary>换电脑了工程怎么办？</summary><p>点顶栏「保存工程」下载一份 JSON，新电脑打开工作台用「导入」读回来就行。JSON 可以手改、可以 diff、可以进版本库。</p></details>
+        <details class="reveal"><summary>为什么有的按钮叫「看说明」而不是「加入工程」？</summary><p>原版 23 组原生单元依赖私有媒体素材与 Python 合成引擎，这一版把它们的场景结构和字段数如实列出来，不做假装能用的空壳。B1 到 B4 是可以直接加进工程的。</p></details>
+      </div>
+    </section>
+
+    <section class="final reveal" aria-labelledby="final-title">
+      <h2 id="final-title">一条字幕稿，一层动效，改到顺眼为止</h2>
+      <p>不用装软件，不用注册，不用等渲染队列。点开就能开始。</p>
+      <button class="btn btn-primary btn-lg" data-action="enter-app">免费打开工作台</button>
+      <p class="final-note">26 张卡 · 27 组场景 · 15 个音效 · 亮暗双主题 · 本机自动保存</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="brand-mark">◈</span><strong>叠光 LumaStack</strong><p>把字幕变成动效层。</p></div>
+    <div class="footer-col"><strong>工作台</strong><a href="#features">功能清单</a><a href="#how">使用流程</a><button data-action="enter-app">打开工作台</button></div>
+    <div class="footer-col"><strong>来源</strong><a href="https://github.com/jeszhou/overlay-studio" target="_blank" rel="noopener">overlay studio</a><a href="https://github.com/motiontemplates/385712" target="_blank" rel="noopener">MotionGit 385712</a><a href="#faq">常见问题</a></div>
+    <div class="footer-col"><strong>说明</strong><a href="#faq">隐私与数据</a><a href="#faq">使用条款</a><a href="#main">回到顶部</a></div>
+    <div class="footer-bottom"><span>© 2026 叠光 LumaStack · 纯静态网页版</span><span>页面找不到时回到首页即可，工作台不会丢工程</span></div>
+  </footer>
+</div>
+
+<div id="app" hidden></div>
+
+<script>
+(function () {
+  var landing = document.getElementById('landing');
+  if (!landing) return;
+  var words = document.getElementById('taglineText');
+  if (words) {
+    var html = '', idx = 0;
+    var nodes = [];
+    Array.prototype.forEach.call(words.childNodes, function (n) {
+      if (n.nodeType === 3) {
+        var parts = n.textContent.split(/(\s+)/);
+        parts.forEach(function (part) {
+          if (/^\s+$/.test(part)) { html += part; return; }
+          if (!part) return;
+          html += '<span class="tw" data-i="' + (idx++) + '">' + part.replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</span>';
+        });
+      } else if (n.nodeName === 'BR') html += '<br>';
+    });
+    words.innerHTML = html;
+    nodes = landing.querySelectorAll('#taglineText .tw');
+    if ('IntersectionObserver' in window) {
+      var ob = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          nodes.forEach(function (el, i) { setTimeout(function () { el.classList.add('on'); }, i * 60); });
+          ob.disconnect();
+        });
+      }, { threshold: 0.35 });
+      ob.observe(words);
+    } else nodes.forEach(function (el) { el.classList.add('on'); });
+  }
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('shown'); ro.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    landing.querySelectorAll('.reveal').forEach(function (el) { ro.observe(el); });
+  } else landing.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('shown'); });
+  var links = landing.querySelectorAll('.nav-links a');
+  landing.querySelectorAll('section[id]').forEach(function (sec) {
+    if (!('IntersectionObserver' in window)) return;
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        links.forEach(function (a) { a.classList.toggle('is-current', a.getAttribute('href') === '#' + sec.id); });
+      });
+    }, { threshold: 0.4 });
+    so.observe(sec);
+  });
+})();
+</script>
+<script src="./assets/bundle.js"></script>
+<script src="./assets/cards.js"></script>
+<script src="./assets/app.js"></script>
+</body>
+</html>

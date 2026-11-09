@@ -1,0 +1,1368 @@
+[
+  {
+    "id": "showcase:ring-metric",
+    "kind": "ring-metric",
+    "name": "刻度数据环",
+    "englishName": "RING METRIC",
+    "category": "数据表达",
+    "description": "计数、注水与刻度同步，比单一圆环更有细节。",
+    "duration": 5.5,
+    "poster": 3.1,
+    "defaults": {
+      "theme": "dark",
+      "position": "center",
+      "kicker": "ATTENTION / 注意力",
+      "value": 82,
+      "max": 100,
+      "decimals": 0,
+      "unit": "%",
+      "label": "让重点被看见",
+      "accent": "#ff6a45",
+      "glass": "none",
+      "glassAlpha": 0.6,
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 1.7
+    },
+    "originalDefaults": {
+      "theme": "dark",
+      "position": "right",
+      "kicker": "比例指标",
+      "value": 92.4,
+      "max": 100,
+      "decimals": 1,
+      "unit": "%",
+      "label": "圆环注水到这个比例",
+      "accent": "blue",
+      "glass": "none",
+      "glassAlpha": 0.6,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "controls": [
+      {
+        "key": "theme",
+        "label": "底色(此卡独立生效)",
+        "type": "select",
+        "options": [
+          {
+            "label": "🌞 亮底",
+            "value": "light"
+          },
+          {
+            "label": "🌙 暗底",
+            "value": "dark"
+          }
+        ]
+      },
+      {
+        "key": "position",
+        "label": "落位",
+        "type": "select",
+        "options": [
+          {
+            "label": "右侧",
+            "value": "right"
+          },
+          {
+            "label": "左侧",
+            "value": "left"
+          },
+          {
+            "label": "居中",
+            "value": "center"
+          }
+        ]
+      },
+      {
+        "key": "kicker",
+        "label": "小标签",
+        "type": "text"
+      },
+      {
+        "key": "value",
+        "label": "数值",
+        "type": "range",
+        "min": 0,
+        "max": 100,
+        "step": 0.1
+      },
+      {
+        "key": "max",
+        "label": "满值(算比例)",
+        "type": "range",
+        "min": 1,
+        "max": 1000,
+        "step": 1
+      },
+      {
+        "key": "decimals",
+        "label": "小数位",
+        "type": "range",
+        "min": 0,
+        "max": 2,
+        "step": 1
+      },
+      {
+        "key": "unit",
+        "label": "单位",
+        "type": "text"
+      },
+      {
+        "key": "label",
+        "label": "说明文字",
+        "type": "text"
+      },
+      {
+        "key": "accent",
+        "label": "环色",
+        "type": "select",
+        "options": [
+          {
+            "label": "数据蓝",
+            "value": "blue"
+          },
+          {
+            "label": "达成绿",
+            "value": "green"
+          },
+          {
+            "label": "否定红",
+            "value": "alert"
+          },
+          {
+            "label": "转变橙",
+            "value": "#ff7a1a"
+          },
+          {
+            "label": "转变黄",
+            "value": "orange"
+          },
+          {
+            "label": "引用紫",
+            "value": "violet"
+          },
+          {
+            "label": "亮粉",
+            "value": "pink"
+          },
+          {
+            "label": "宝石青",
+            "value": "teal"
+          }
+        ]
+      },
+      {
+        "key": "glass",
+        "label": "玻璃底色",
+        "type": "select",
+        "options": [
+          {
+            "label": "无",
+            "value": "none"
+          },
+          {
+            "label": "🌙 黑玻璃",
+            "value": "dark"
+          },
+          {
+            "label": "🌞 白玻璃",
+            "value": "light"
+          }
+        ]
+      },
+      {
+        "key": "glassAlpha",
+        "label": "底色透明度(越小越透)",
+        "type": "range",
+        "min": 0.2,
+        "max": 1,
+        "step": 0.05,
+        "unit": ""
+      },
+      {
+        "key": "offsetX",
+        "label": "水平微调",
+        "type": "range",
+        "min": -700,
+        "max": 700,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "offsetY",
+        "label": "垂直微调",
+        "type": "range",
+        "min": -450,
+        "max": 450,
+        "step": 10,
+        "unit": "px"
+      }
+    ],
+    "source": "官网公开展示包",
+    "sourceUrl": "https://www.overlaystudio.cn/",
+    "sourceScope": "public-showcase"
+  },
+  {
+    "id": "showcase:terminal-3d",
+    "kind": "terminal-3d",
+    "name": "代码画画",
+    "englishName": "CODE TO CANVAS",
+    "category": "空间展示",
+    "description": "从终端打字到画布成形，一张卡讲完一个过程。",
+    "duration": 7,
+    "poster": 4.8,
+    "defaults": {
+      "theme": "dark",
+      "position": "center",
+      "file": "idea → canvas",
+      "lines": "",
+      "cps": 26,
+      "offsetX": 0,
+      "offsetY": 0,
+      "mode": "code-draw",
+      "drawAt": 2.5,
+      "drawMs": 1700,
+      "accent": "#75c9fa",
+      "scale": 1.52
+    },
+    "originalDefaults": {
+      "theme": "dark",
+      "position": "center",
+      "file": "demo — 终端演示",
+      "lines": "$ 敲一条命令 --带参数|# 注释:说明这一步在干嘛|❯ 执行过程逐字打出 ...|✓ 结果一行,绿勾收尾",
+      "cps": 26,
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "controls": [
+      {
+        "key": "emph",
+        "label": "卡片样式(新卡/旧卡、要不要底板)",
+        "type": "select",
+        "options": [
+          {
+            "label": "跟随全局",
+            "value": "auto"
+          },
+          {
+            "label": "精修·有底板",
+            "value": "plate"
+          },
+          {
+            "label": "精修·无底板",
+            "value": "bare"
+          },
+          {
+            "label": "原版",
+            "value": "off"
+          },
+          {
+            "label": "原版·描边",
+            "value": "outline"
+          }
+        ]
+      },
+      {
+        "key": "mode",
+        "label": "演示模式",
+        "type": "select",
+        "options": [
+          {
+            "label": "终端打字",
+            "value": "terminal"
+          },
+          {
+            "label": "代码画画",
+            "value": "code-draw"
+          }
+        ]
+      },
+      {
+        "key": "drawAt",
+        "label": "开始画图(距卡片起点)",
+        "type": "range",
+        "min": 0,
+        "max": 10,
+        "step": 0.01,
+        "unit": "s"
+      },
+      {
+        "key": "drawMs",
+        "label": "画图时长",
+        "type": "range",
+        "min": 300,
+        "max": 5000,
+        "step": 50,
+        "unit": "ms"
+      },
+      {
+        "key": "toolImg1",
+        "label": "工具图标 1",
+        "type": "text"
+      },
+      {
+        "key": "toolImg2",
+        "label": "工具图标 2",
+        "type": "text"
+      },
+      {
+        "key": "drawImg",
+        "label": "画出来的图(代码画画·精修版;空=默认太阳和山)",
+        "type": "text"
+      },
+      {
+        "key": "theme",
+        "label": "底色(此卡独立生效)",
+        "type": "select",
+        "options": [
+          {
+            "label": "🌞 亮底",
+            "value": "light"
+          },
+          {
+            "label": "🌙 暗底",
+            "value": "dark"
+          }
+        ]
+      },
+      {
+        "key": "position",
+        "label": "落位",
+        "type": "select",
+        "options": [
+          {
+            "label": "居中",
+            "value": "center"
+          },
+          {
+            "label": "左侧",
+            "value": "left"
+          },
+          {
+            "label": "右侧",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "key": "file",
+        "label": "标题栏文件名",
+        "type": "text"
+      },
+      {
+        "key": "lines",
+        "label": "命令行(用 | 分隔;$提示符 -参数 \"字符串\" #注释 ✓成功 ✗失败)",
+        "type": "text"
+      },
+      {
+        "key": "cps",
+        "label": "打字速度(字/秒)",
+        "type": "range",
+        "min": 8,
+        "max": 60,
+        "step": 2
+      },
+      {
+        "key": "lineTimes",
+        "label": "逐行开打秒(|分隔,数量须与行数相同;空=连续打字)",
+        "type": "text"
+      },
+      {
+        "key": "offsetX",
+        "label": "水平微调",
+        "type": "range",
+        "min": -700,
+        "max": 700,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "offsetY",
+        "label": "垂直微调",
+        "type": "range",
+        "min": -450,
+        "max": 450,
+        "step": 10,
+        "unit": "px"
+      }
+    ],
+    "source": "官网公开展示包",
+    "sourceUrl": "https://www.overlaystudio.cn/",
+    "sourceScope": "public-showcase"
+  },
+  {
+    "id": "showcase:ecosystem-hub",
+    "kind": "ecosystem-hub",
+    "name": "生态连接图",
+    "englishName": "ECOSYSTEM HUB",
+    "category": "信息结构",
+    "description": "节点依次接入中心，让复杂关系一眼可读。",
+    "duration": 6.5,
+    "poster": 3.8,
+    "defaults": {
+      "theme": "dark",
+      "position": "center",
+      "hub": "创作",
+      "icons": "01,灵感|02,脚本|03,画面|04,声音|05,动效|06,成片",
+      "accent": "#efac63",
+      "hubSub": "CREATIVE HUB",
+      "nodeMark": "number",
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 1.9
+    },
+    "originalDefaults": {
+      "theme": "dark",
+      "position": "center",
+      "hub": "中心",
+      "icons": "🔗,工具一|✉,工具二|📄,工具三|◎,工具四|▲,工具五|✱,工具六",
+      "accent": "blue",
+      "hubSub": "HUB",
+      "nodeMark": "icon",
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "controls": [
+      {
+        "key": "theme",
+        "label": "底色(此卡独立生效)",
+        "type": "select",
+        "options": [
+          {
+            "label": "🌞 亮底",
+            "value": "light"
+          },
+          {
+            "label": "🌙 暗底",
+            "value": "dark"
+          }
+        ]
+      },
+      {
+        "key": "position",
+        "label": "落位",
+        "type": "select",
+        "options": [
+          {
+            "label": "居中",
+            "value": "center"
+          },
+          {
+            "label": "右侧",
+            "value": "right"
+          },
+          {
+            "label": "左侧",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "key": "hub",
+        "label": "中心名称",
+        "type": "text"
+      },
+      {
+        "key": "icons",
+        "label": "外部工具(图标,名称 用 | 分隔)",
+        "type": "text"
+      },
+      {
+        "key": "accent",
+        "label": "中心色",
+        "type": "select",
+        "options": [
+          {
+            "label": "数据蓝",
+            "value": "blue"
+          },
+          {
+            "label": "达成绿",
+            "value": "green"
+          },
+          {
+            "label": "否定红",
+            "value": "alert"
+          },
+          {
+            "label": "转变橙",
+            "value": "#ff7a1a"
+          },
+          {
+            "label": "转变黄",
+            "value": "orange"
+          },
+          {
+            "label": "引用紫",
+            "value": "violet"
+          },
+          {
+            "label": "亮粉",
+            "value": "pink"
+          },
+          {
+            "label": "宝石青",
+            "value": "teal"
+          }
+        ]
+      },
+      {
+        "key": "hubSub",
+        "label": "中心小字(精修版)",
+        "type": "text"
+      },
+      {
+        "key": "nodeMark",
+        "label": "节点标记(精修版)",
+        "type": "select",
+        "options": [
+          {
+            "label": "图标",
+            "value": "icon"
+          },
+          {
+            "label": "序号",
+            "value": "num"
+          },
+          {
+            "label": "圆点",
+            "value": "dot"
+          }
+        ]
+      },
+      {
+        "key": "offsetX",
+        "label": "水平微调",
+        "type": "range",
+        "min": -700,
+        "max": 700,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "offsetY",
+        "label": "垂直微调",
+        "type": "range",
+        "min": -450,
+        "max": 450,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "reflowOnDrag",
+        "label": "拖动时跟着位置重新排版",
+        "type": "toggle"
+      }
+    ],
+    "source": "官网公开展示包",
+    "sourceUrl": "https://www.overlaystudio.cn/",
+    "sourceScope": "public-showcase"
+  },
+  {
+    "id": "showcase:demo-tour",
+    "kind": "demo-tour",
+    "name": "巡览运镜",
+    "englishName": "DEMO TOUR",
+    "category": "镜头叙事",
+    "description": "浮屏倾斜、逐站推近，演示产品时更有镜头语言。",
+    "duration": 9,
+    "poster": 2.5,
+    "defaults": {
+      "theme": "dark",
+      "videoSrc": "",
+      "clipStart": 0,
+      "clipEnd": 0,
+      "vidRate": 1,
+      "imgSrc": "/media/featured/studio-screen-20261017.png",
+      "stops": "0,0,1\n-24,-9,1.8\n27,-6,1.9\n0,0,1",
+      "routeEdit": false,
+      "markZoom": 1.6,
+      "tourSec": 7.8,
+      "tilt": 9,
+      "camSrc": "",
+      "camX": 0,
+      "camY": 0,
+      "panX": 0,
+      "panY": 0,
+      "accent": "#ff7957",
+      "stopNames": "全景|看见工作台\n编排|组织动效\n精修|调整细节\n完成|回到全局",
+      "tourTitle": "一张卡，带你看懂",
+      "camSize": 100,
+      "faceZoom": 1.6,
+      "winSize": 112,
+      "stageBg": "none",
+      "winX": 0,
+      "winY": 0
+    },
+    "originalDefaults": {
+      "theme": "dark",
+      "videoSrc": "",
+      "clipStart": 0,
+      "clipEnd": 0,
+      "vidRate": 1,
+      "imgSrc": "",
+      "stops": "0,0,1\n-16,-6,1.55\n4,8,1.9\n15,-2,2.15",
+      "routeEdit": false,
+      "markZoom": 1.6,
+      "tourSec": 9,
+      "tilt": 7,
+      "camSrc": "",
+      "camX": 0,
+      "camY": 0,
+      "panX": 0,
+      "panY": 0,
+      "accent": "blue",
+      "stopNames": "",
+      "tourTitle": "一起看一下这个界面",
+      "camSize": 100,
+      "faceZoom": 1.6,
+      "winSize": 100,
+      "stageBg": "solid",
+      "winX": 0,
+      "winY": 0
+    },
+    "controls": [
+      {
+        "key": "vidRate",
+        "label": "录屏播放倍速",
+        "type": "select",
+        "options": [
+          {
+            "label": "1× 原速",
+            "value": "1"
+          },
+          {
+            "label": "1.25×",
+            "value": "1.25"
+          },
+          {
+            "label": "1.5×",
+            "value": "1.5"
+          },
+          {
+            "label": "2×",
+            "value": "2"
+          },
+          {
+            "label": "3×",
+            "value": "3"
+          },
+          {
+            "label": "4×",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "key": "theme",
+        "label": "底色(此卡独立生效)",
+        "type": "select",
+        "options": [
+          {
+            "label": "🌞 亮底",
+            "value": "light"
+          },
+          {
+            "label": "🌙 暗底",
+            "value": "dark"
+          }
+        ]
+      },
+      {
+        "key": "videoSrc",
+        "label": "录屏路径(/demo/xxx.mp4)",
+        "type": "text"
+      },
+      {
+        "key": "clipStart",
+        "label": "录屏起播秒",
+        "type": "range",
+        "min": 0,
+        "max": 600,
+        "step": 0.01,
+        "unit": "s"
+      },
+      {
+        "key": "clipEnd",
+        "label": "录屏截止秒（0＝播到结尾）",
+        "type": "range",
+        "min": 0,
+        "max": 600,
+        "step": 0.01,
+        "unit": "s"
+      },
+      {
+        "key": "imgSrc",
+        "label": "截图(填了优先用图)",
+        "type": "text",
+        "accept": "image/*"
+      },
+      {
+        "key": "routeEdit",
+        "label": "在画面上标记巡览路线",
+        "type": "toggle"
+      },
+      {
+        "key": "markZoom",
+        "label": "新标记默认放大",
+        "type": "range",
+        "min": 1,
+        "max": 3,
+        "step": 0.1,
+        "unit": "×"
+      },
+      {
+        "key": "stops",
+        "label": "巡览路线（点击选点）",
+        "type": "textarea",
+        "rows": 5
+      },
+      {
+        "key": "tourSec",
+        "label": "巡览总时长",
+        "type": "range",
+        "min": 3,
+        "max": 24,
+        "step": 0.5,
+        "unit": "s"
+      },
+      {
+        "key": "tilt",
+        "label": "3D 倾斜幅度",
+        "type": "range",
+        "min": 0,
+        "max": 14,
+        "step": 0.5,
+        "unit": "°"
+      },
+      {
+        "key": "panX",
+        "label": "焦点横移(推近各站整体)",
+        "type": "range",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "key": "panY",
+        "label": "焦点纵移(推近各站整体)",
+        "type": "range",
+        "min": -40,
+        "max": 40,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "key": "camSrc",
+        "label": "口播圆窗(留空导出用全局口播)",
+        "type": "text"
+      },
+      {
+        "key": "camX",
+        "label": "圆窗横移(画布里也能直接拖)",
+        "type": "range",
+        "min": -900,
+        "max": 900,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "key": "camY",
+        "label": "圆窗纵移(画布里也能直接拖)",
+        "type": "range",
+        "min": -1600,
+        "max": 1600,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "key": "accent",
+        "label": "强调色(圆窗描边)",
+        "type": "select",
+        "options": [
+          {
+            "label": "数据蓝",
+            "value": "blue"
+          },
+          {
+            "label": "达成绿",
+            "value": "green"
+          },
+          {
+            "label": "否定红",
+            "value": "alert"
+          },
+          {
+            "label": "转变橙",
+            "value": "#ff7a1a"
+          },
+          {
+            "label": "转变黄",
+            "value": "orange"
+          },
+          {
+            "label": "引用紫",
+            "value": "violet"
+          },
+          {
+            "label": "亮粉",
+            "value": "pink"
+          },
+          {
+            "label": "宝石青",
+            "value": "teal"
+          }
+        ]
+      },
+      {
+        "key": "stopNames",
+        "label": "每站站名(精修版):一行一站「站名|一句说明」,留空只显示编号",
+        "type": "textarea",
+        "rows": 4
+      },
+      {
+        "key": "tourTitle",
+        "label": "左上角提示语(精修版,留空不显示)",
+        "type": "text"
+      },
+      {
+        "key": "camSize",
+        "label": "口播圆窗大小(精修版生效)",
+        "type": "range",
+        "min": 60,
+        "max": 180,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "key": "stageBg",
+        "label": "舞台底",
+        "type": "select",
+        "options": [
+          {
+            "label": "有底(盖住下面的卡)",
+            "value": "solid"
+          },
+          {
+            "label": "透明(透出下面的背景卡)",
+            "value": "none"
+          }
+        ]
+      },
+      {
+        "key": "winX",
+        "label": "展示窗横移(画布里也能直接拖)",
+        "type": "range",
+        "min": -900,
+        "max": 900,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "key": "winY",
+        "label": "展示窗纵移(画布里也能直接拖)",
+        "type": "range",
+        "min": -900,
+        "max": 900,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "key": "winSize",
+        "label": "展示窗大小(100=原尺寸;精修版约 140、原版约 120 接近全屏)",
+        "type": "range",
+        "min": 50,
+        "max": 140,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "key": "faceZoom",
+        "label": "圆窗里画面放大(精修版)",
+        "type": "range",
+        "min": 1,
+        "max": 2.5,
+        "step": 0.05,
+        "unit": "×"
+      }
+    ],
+    "source": "官网公开展示包",
+    "sourceUrl": "https://www.overlaystudio.cn/",
+    "sourceScope": "public-showcase"
+  },
+  {
+    "id": "showcase:stair-bars",
+    "kind": "stair-bars",
+    "name": "阶梯数据柱",
+    "englishName": "STAIR BARS",
+    "category": "数据表达",
+    "description": "逐档生长、末档强调，适合呈现差距和趋势。",
+    "duration": 6.5,
+    "poster": 4.8,
+    "defaults": {
+      "theme": "dark",
+      "position": "center",
+      "kicker": "PROGRESS / 示例数据",
+      "title": "把成长\n*变得可见*",
+      "vals": "28|56|92",
+      "valTexts": "28|56|92",
+      "labels": "起点|推进|突破",
+      "colors": "#495465|#e8916b|#ff4d2e",
+      "grid": "25|50|75",
+      "gridUnit": "",
+      "caption": "",
+      "foot": "",
+      "times": "0.3|1.1|2.5|3.8",
+      "accent": "#ff4d2e",
+      "focus": "last",
+      "trend": "smooth",
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 1.78
+    },
+    "originalDefaults": {
+      "theme": "dark",
+      "position": "center",
+      "kicker": "LEVELS · 眉题写英文",
+      "title": "同一件事\n从 3 变成 *9.3*",
+      "vals": "3|4.8|9.3",
+      "valTexts": "3s|4.8s|9.3s",
+      "labels": "第一档|第二档|第三档",
+      "colors": "var(--hud-green)|var(--hud-orange)|var(--hud-alert)",
+      "grid": "3|6|9",
+      "gridUnit": "s",
+      "caption": "小注写这三档是按什么分的",
+      "foot": "脚注写数据口径 · 星号包住的词会*变强调色*",
+      "times": "0.3|1.3|3.4|5.2",
+      "accent": "blue",
+      "focus": "last",
+      "trend": "smooth",
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "controls": [
+      {
+        "key": "theme",
+        "label": "底色(此卡独立生效)",
+        "type": "select",
+        "options": [
+          {
+            "label": "🌞 亮底",
+            "value": "light"
+          },
+          {
+            "label": "🌙 暗底",
+            "value": "dark"
+          }
+        ]
+      },
+      {
+        "key": "position",
+        "label": "落位",
+        "type": "select",
+        "options": [
+          {
+            "label": "居中",
+            "value": "center"
+          },
+          {
+            "label": "左侧",
+            "value": "left"
+          },
+          {
+            "label": "右侧",
+            "value": "right"
+          }
+        ]
+      },
+      {
+        "key": "kicker",
+        "label": "眉题(EN 等宽)",
+        "type": "text"
+      },
+      {
+        "key": "title",
+        "label": "标题(\\n 分行,*星号*=强调色)",
+        "type": "textarea",
+        "rows": 2
+      },
+      {
+        "key": "vals",
+        "label": "柱值(数字,| 分隔)",
+        "type": "text"
+      },
+      {
+        "key": "valTexts",
+        "label": "柱顶数值文案(| 分隔)",
+        "type": "text"
+      },
+      {
+        "key": "labels",
+        "label": "档位标签(| 分隔)",
+        "type": "text"
+      },
+      {
+        "key": "colors",
+        "label": "柱色(| 分隔,可用 var(--hud-*) 令牌)",
+        "type": "text"
+      },
+      {
+        "key": "grid",
+        "label": "网格线数值(| 分隔)",
+        "type": "text"
+      },
+      {
+        "key": "gridUnit",
+        "label": "网格线单位",
+        "type": "text"
+      },
+      {
+        "key": "caption",
+        "label": "柱下说明",
+        "type": "text"
+      },
+      {
+        "key": "foot",
+        "label": "底注(*星号*=加粗)",
+        "type": "text"
+      },
+      {
+        "key": "times",
+        "label": "4 拍秒数(标题|柱|说明|底注)",
+        "type": "text"
+      },
+      {
+        "key": "accent",
+        "label": "强调色(眉题/标题)",
+        "type": "select",
+        "options": [
+          {
+            "label": "数据蓝",
+            "value": "blue"
+          },
+          {
+            "label": "达成绿",
+            "value": "green"
+          },
+          {
+            "label": "否定红",
+            "value": "alert"
+          },
+          {
+            "label": "转变橙",
+            "value": "#ff7a1a"
+          },
+          {
+            "label": "转变黄",
+            "value": "orange"
+          },
+          {
+            "label": "引用紫",
+            "value": "violet"
+          },
+          {
+            "label": "亮粉",
+            "value": "pink"
+          },
+          {
+            "label": "宝石青",
+            "value": "teal"
+          }
+        ]
+      },
+      {
+        "key": "focus",
+        "label": "重点柱(精修版)",
+        "type": "select",
+        "options": [
+          {
+            "label": "最后一根",
+            "value": "last"
+          },
+          {
+            "label": "第一根",
+            "value": "first"
+          },
+          {
+            "label": "最高",
+            "value": "max"
+          },
+          {
+            "label": "最低",
+            "value": "min"
+          },
+          {
+            "label": "不标",
+            "value": "none"
+          }
+        ]
+      },
+      {
+        "key": "trend",
+        "label": "柱顶趋势线(精修版)",
+        "type": "select",
+        "options": [
+          {
+            "label": "平滑虚线",
+            "value": "smooth"
+          },
+          {
+            "label": "折线虚线",
+            "value": "line"
+          },
+          {
+            "label": "不画",
+            "value": "none"
+          }
+        ]
+      },
+      {
+        "key": "offsetX",
+        "label": "水平微调",
+        "type": "range",
+        "min": -700,
+        "max": 700,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "offsetY",
+        "label": "垂直微调",
+        "type": "range",
+        "min": -450,
+        "max": 450,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "reflowOnDrag",
+        "label": "拖动时跟着位置重新排版",
+        "type": "toggle"
+      }
+    ],
+    "source": "官网公开展示包",
+    "sourceUrl": "https://www.overlaystudio.cn/",
+    "sourceScope": "public-showcase"
+  },
+  {
+    "id": "showcase:quote-cite",
+    "kind": "quote-cite",
+    "name": "金句引用",
+    "englishName": "QUOTE CITE",
+    "category": "文字动效",
+    "description": "引文、作者、来源分层出现，适合沉稳的信息节奏。",
+    "duration": 6,
+    "poster": 3.4,
+    "defaults": {
+      "theme": "dark",
+      "position": "center",
+      "media": "none",
+      "quote": "让复杂的事情，\n有清楚的表达。",
+      "avatar": "O",
+      "img1": "",
+      "author": "OVERLAY STUDIO",
+      "source": "创作笔记 · 演示文案",
+      "accent": "#ff4d2e",
+      "tag": "创作笔记",
+      "sourceLabel": "SOURCE",
+      "offsetX": 0,
+      "offsetY": 0,
+      "scale": 2.1
+    },
+    "originalDefaults": {
+      "theme": "dark",
+      "position": "right",
+      "media": "none",
+      "quote": "引用谁的话,原文放这里。",
+      "avatar": "名",
+      "img1": "",
+      "author": "被引用的人",
+      "source": "身份头衔 · 内容出处",
+      "accent": "blue",
+      "tag": "引用",
+      "sourceLabel": "出处",
+      "offsetX": 0,
+      "offsetY": 0
+    },
+    "controls": [
+      {
+        "key": "emph",
+        "label": "卡片样式(新卡/旧卡、要不要底板)",
+        "type": "select",
+        "options": [
+          {
+            "label": "跟随全局",
+            "value": "auto"
+          },
+          {
+            "label": "精修·有底板",
+            "value": "plate"
+          },
+          {
+            "label": "精修·无底板",
+            "value": "bare"
+          },
+          {
+            "label": "原版",
+            "value": "off"
+          },
+          {
+            "label": "原版·描边",
+            "value": "outline"
+          }
+        ]
+      },
+      {
+        "key": "theme",
+        "label": "底色(此卡独立生效)",
+        "type": "select",
+        "options": [
+          {
+            "label": "🌞 亮底",
+            "value": "light"
+          },
+          {
+            "label": "🌙 暗底",
+            "value": "dark"
+          }
+        ]
+      },
+      {
+        "key": "position",
+        "label": "落位",
+        "type": "select",
+        "options": [
+          {
+            "label": "右侧",
+            "value": "right"
+          },
+          {
+            "label": "左侧",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "key": "media",
+        "label": "配图/视频",
+        "type": "select",
+        "options": [
+          {
+            "label": "只引用话",
+            "value": "none"
+          },
+          {
+            "label": "带图片占位",
+            "value": "image"
+          },
+          {
+            "label": "带视频占位",
+            "value": "video"
+          }
+        ]
+      },
+      {
+        "key": "quote",
+        "label": "引用的话(空 = 纯人物介绍)",
+        "type": "text"
+      },
+      {
+        "key": "img1",
+        "label": "头像图片(Twitter 头像等)",
+        "type": "text"
+      },
+      {
+        "key": "avatar",
+        "label": "头像占位(没传图时用,字/emoji)",
+        "type": "text"
+      },
+      {
+        "key": "author",
+        "label": "作者",
+        "type": "text"
+      },
+      {
+        "key": "source",
+        "label": "来源/头衔",
+        "type": "text"
+      },
+      {
+        "key": "accent",
+        "label": "强调色",
+        "type": "select",
+        "options": [
+          {
+            "label": "数据蓝",
+            "value": "blue"
+          },
+          {
+            "label": "达成绿",
+            "value": "green"
+          },
+          {
+            "label": "否定红",
+            "value": "alert"
+          },
+          {
+            "label": "转变橙",
+            "value": "#ff7a1a"
+          },
+          {
+            "label": "转变黄",
+            "value": "orange"
+          },
+          {
+            "label": "引用紫",
+            "value": "violet"
+          },
+          {
+            "label": "亮粉",
+            "value": "pink"
+          },
+          {
+            "label": "宝石青",
+            "value": "teal"
+          }
+        ]
+      },
+      {
+        "key": "tag",
+        "label": "右上角小签(精修版,空=不显示)",
+        "type": "text"
+      },
+      {
+        "key": "sourceLabel",
+        "label": "来源前的小字(精修版,空=不显示)",
+        "type": "text"
+      },
+      {
+        "key": "offsetX",
+        "label": "水平微调",
+        "type": "range",
+        "min": -700,
+        "max": 700,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "offsetY",
+        "label": "垂直微调",
+        "type": "range",
+        "min": -450,
+        "max": 450,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "key": "reflowOnDrag",
+        "label": "拖动时跟着位置重新排版",
+        "type": "toggle"
+      }
+    ],
+    "source": "官网公开展示包",
+    "sourceUrl": "https://www.overlaystudio.cn/",
+    "sourceScope": "public-showcase"
+  }
+]

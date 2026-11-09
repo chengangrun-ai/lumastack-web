@@ -1,0 +1,218 @@
+[
+  {
+    "id": "A",
+    "purpose": "3D media wall",
+    "start": 4.65,
+    "end": 10.7833,
+    "fieldCount": 6,
+    "mediaCount": 1
+  },
+  {
+    "id": "B",
+    "purpose": "Beat-cut media montage",
+    "start": 43.3167,
+    "end": 48.233399999999996,
+    "fieldCount": 15,
+    "mediaCount": 14
+  },
+  {
+    "id": "C",
+    "purpose": "Accelerating media grid",
+    "start": 73.8,
+    "end": 78.7167,
+    "fieldCount": 3,
+    "mediaCount": 2
+  },
+  {
+    "id": "D",
+    "purpose": "Process cards and dissolve",
+    "start": 109.8167,
+    "end": 114.1167,
+    "fieldCount": 23,
+    "mediaCount": 2
+  },
+  {
+    "id": "F",
+    "purpose": "Two-clip showcase",
+    "start": 193.45,
+    "end": 198.36669999999998,
+    "fieldCount": 4,
+    "mediaCount": 2
+  },
+  {
+    "id": "S01",
+    "purpose": "Spatial card opening and title",
+    "start": 0,
+    "end": 14.333333333333332,
+    "fieldCount": 52,
+    "mediaCount": 1
+  },
+  {
+    "id": "S02",
+    "purpose": "Orbiting examples, gap repair and feedback",
+    "start": 14.333333333333332,
+    "end": 22.883333333333333,
+    "fieldCount": 31,
+    "mediaCount": 7
+  },
+  {
+    "id": "S03",
+    "purpose": "Path drawing, dimensions and flip digits",
+    "start": 22.883333333333333,
+    "end": 30.913333333333334,
+    "fieldCount": 12,
+    "mediaCount": 0
+  },
+  {
+    "id": "S04",
+    "purpose": "Emphasis, globe connection and merge",
+    "start": 30.913333333333334,
+    "end": 41.39333333333333,
+    "fieldCount": 15,
+    "mediaCount": 0
+  },
+  {
+    "id": "S05",
+    "purpose": "Layered file workflow and replacement",
+    "start": 41.39333333333333,
+    "end": 64.75,
+    "fieldCount": 51,
+    "mediaCount": 5
+  },
+  {
+    "id": "S06",
+    "purpose": "Media gathering and focus",
+    "start": 64.75,
+    "end": 73.8,
+    "fieldCount": 22,
+    "mediaCount": 0
+  },
+  {
+    "id": "S07",
+    "purpose": "Keyword cuts, aspect morph and categories",
+    "start": 78.7167,
+    "end": 90.06666666666666,
+    "fieldCount": 36,
+    "mediaCount": 22
+  },
+  {
+    "id": "S08",
+    "purpose": "Scanning choices and fragmentation",
+    "start": 90.06666666666666,
+    "end": 99.06666666666666,
+    "fieldCount": 11,
+    "mediaCount": 0
+  },
+  {
+    "id": "S09",
+    "purpose": "Process record and light cut",
+    "start": 99.06666666666666,
+    "end": 109.8167,
+    "fieldCount": 28,
+    "mediaCount": 2
+  },
+  {
+    "id": "S10",
+    "purpose": "Curved versus direct path",
+    "start": 114.1167,
+    "end": 123.28666666666666,
+    "fieldCount": 9,
+    "mediaCount": 0
+  },
+  {
+    "id": "S11",
+    "purpose": "Four-node circular relationship",
+    "start": 123.28666666666666,
+    "end": 133.31666666666666,
+    "fieldCount": 12,
+    "mediaCount": 1
+  },
+  {
+    "id": "S12",
+    "purpose": "Multitrack timeline and simplification",
+    "start": 133.31666666666666,
+    "end": 151.52666666666664,
+    "fieldCount": 20,
+    "mediaCount": 1
+  },
+  {
+    "id": "S13",
+    "purpose": "Three steps, gauge, convergence and timer",
+    "start": 151.52666666666664,
+    "end": 166.48666666666668,
+    "fieldCount": 23,
+    "mediaCount": 1
+  },
+  {
+    "id": "S14",
+    "purpose": "Recording focus, state change and comparison",
+    "start": 166.48666666666668,
+    "end": 182.18666666666667,
+    "fieldCount": 35,
+    "mediaCount": 1
+  },
+  {
+    "id": "S15",
+    "purpose": "Switch, parameters and linked graph",
+    "start": 182.18666666666667,
+    "end": 190.08666666666664,
+    "fieldCount": 18,
+    "mediaCount": 0
+  },
+  {
+    "id": "S16",
+    "purpose": "Terminal confirmation and version race",
+    "start": 190.08666666666664,
+    "end": 201.23333333333335,
+    "fieldCount": 6,
+    "mediaCount": 0
+  },
+  {
+    "id": "S17",
+    "purpose": "Spotlight, response and closure",
+    "start": 201.23333333333335,
+    "end": 213.98333333333335,
+    "fieldCount": 22,
+    "mediaCount": 0
+  },
+  {
+    "id": "END",
+    "purpose": "Brand reveal and materials guide",
+    "start": 213.98333333333335,
+    "end": 223.85,
+    "fieldCount": 15,
+    "mediaCount": 0
+  },
+  {
+    "id": "B1",
+    "purpose": "keyword and explanation",
+    "start": 250,
+    "end": 258,
+    "fieldCount": 0,
+    "mediaCount": 0
+  },
+  {
+    "id": "B2",
+    "purpose": "one to five neutral points",
+    "start": 260,
+    "end": 270,
+    "fieldCount": 0,
+    "mediaCount": 0
+  },
+  {
+    "id": "B3",
+    "purpose": "two perspectives and a conclusion",
+    "start": 272,
+    "end": 282,
+    "fieldCount": 0,
+    "mediaCount": 0
+  },
+  {
+    "id": "B4",
+    "purpose": "summary and next action",
+    "start": 284,
+    "end": 292,
+    "fieldCount": 0,
+    "mediaCount": 0
+  }
+]
